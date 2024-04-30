@@ -29,6 +29,10 @@ function App() {
             path="/profile/:userId" 
             element={isAuth ? <ProfilePage />:<Navigate to = "/" />} 
           />
+          <Route 
+            path="/fitnessHub" 
+            element={<FitnessHub/>} 
+          />
         </Routes>
       </ThemeProvider>
     </BrowserRouter>

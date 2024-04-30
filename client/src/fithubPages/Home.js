@@ -1,8 +1,15 @@
-import React from 'react'
-
+import React, {useState} from 'react'
+import {Box} from '@mui/material'
+import Exercise from './../fithubComponents/Exercise'
+import HeroBanner from './../fithubComponents/HeroBanner'
+import SearchExercise from './../fithubComponents/SearchExercise'
 const Home = () => {
   return (
-    <div>Home</div>
+    <Box>
+      <HeroBanner/>
+      <SearchExercise/>
+      <Exercise/>
+    </Box>
   )
 }
 

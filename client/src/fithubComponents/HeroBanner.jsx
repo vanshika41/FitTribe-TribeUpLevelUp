@@ -1,13 +1,13 @@
 import React from 'react';
 import {Box, Stack, Typography, Button} from '@mui/material';
-import HeroBannerImage from '../assets/images/banner.png'
+import HeroBannerImage from '../assets/images/banner.jpeg'
 const HeroBanner = () => {
   return (
     <Box
       sx = {{
         mt : {lg : '212px', xs : '70px'},
         ml : {sm : '50px'},
-        display: 'flex', // Add this
+        display: 'flex', // Add this`
         justifyContent: 'space-between', 
       }}
       position={'relative'}
@@ -17,7 +17,7 @@ const HeroBanner = () => {
       {/* Adding the materials for the hero banner Starting with the colors*/}
       <Stack spacing={2}>
           <Typography
-                  color = "#FF2625"
+                  color = "#1E0342"
                   fontWeight= "600"
                   fontSize= "26px"
                 >
@@ -36,7 +36,7 @@ const HeroBanner = () => {
                   Love
                 </Typography>
                 <Typography
-                  color = "black"
+                  color = "#526D82"
                   fontWeight= "600"
                   lineHeight= "35px"
                   mb = "10px"
@@ -45,19 +45,19 @@ const HeroBanner = () => {
                 }}
                 
                 >
-                  Check Out the most Efficient exercises
+                  Check Out The Most Efficient Exercises
                 </Typography>
                 <Button 
                   variant = "contained"
                   color = "error"
                   href = "#exercises"
-                  sx = {{backgroundColor : '#ff2625',
+                  sx = {{backgroundColor : '#1E0342',
                         padding : '10px'
                         }}
                 >Explore Exercises</Button>
                 <Typography
                   fontWeight = {600}
-                  color = '#ff2625'
+                  color = '#1E0342'
                   sx = {{
                     opacity : 0.1,
                     display : {lg : 'block', xs : 'none'}
@@ -72,7 +72,8 @@ const HeroBanner = () => {
         src = {HeroBannerImage} 
         alt = "bannerImage" 
         className = "hero-banner-img"
-        style={{ maxHeight: '100%', maxWidth: '100%' }}
+        style={{ width: '47%', height: 'auto', borderRadius: '20px' }}
+        
       />
     </Box>
   )

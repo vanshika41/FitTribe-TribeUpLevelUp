@@ -1,14 +1,24 @@
 import React, {useState} from 'react'
 import {Box} from '@mui/material'
-import Exercise from './../fithubComponents/Exercise'
+import Exercises from '../fithubComponents/Exercises'
 import HeroBanner from './../fithubComponents/HeroBanner'
-import SearchExercise from './../fithubComponents/SearchExercise'
+import SearchExercises from '../fithubComponents/SearchExercises'
 const Home = () => {
+  const [exercises, setExercises] = useState([]);
+  const [bodyPart, setBodyPart] = useState('all');
   return (
     <Box>
       <HeroBanner/>
-      <SearchExercise/>
-      <Exercise/>
+      <SearchExercises
+      setExercises = {setExercises}
+      bodyPart = {bodyPart}
+      setBodyPart = {setBodyPart}
+      />
+      <Exercises
+      setExercises = {setExercises}
+      bodyPart = {bodyPart}
+      setBodyPart = {setBodyPart}
+      />
     </Box>
   )
 }

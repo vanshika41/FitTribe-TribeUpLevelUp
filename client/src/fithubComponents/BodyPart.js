@@ -10,7 +10,7 @@ const BodyPart = ({item , setBodyPart, bodyPart}) => {
      className='bodyPart-card'
      sx = {
         bodyPart === item ?{
-            borderTop : '4px solid #ff2625',
+            borderTop : '4px solid #27374D',
             backgroundColor : '#fff',
             borderBottomLeftRadius : '20px',
             width : '270px',
@@ -36,8 +36,8 @@ const BodyPart = ({item , setBodyPart, bodyPart}) => {
     >
         <img src = {Icon} alt = "dumbbell" className='body-part-icon'
         style = {{
-            width : '20px'
-            ,height :' 20px'
+            width : '60px'
+            ,height :' 60px'
         }}
         
         />

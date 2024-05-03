@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 import { CssBaseline,ThemeProvider } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 import { themeSettings } from "./theme";
-
+import ExerciseDetail from "fithubPages/ExerciseDetail";
 function App() {
   const mode = useSelector((state)=> state.mode);
   const theme = useMemo(()=> createTheme(themeSettings(mode)), [mode]);
@@ -34,6 +34,7 @@ function App() {
             path="/fitnessHub" 
             element={<FitnessHub/>} 
           />
+      <Route path="/exercise/:id" element={<ExerciseDetail />} />
         </Routes>
       </ThemeProvider>
     </BrowserRouter>
